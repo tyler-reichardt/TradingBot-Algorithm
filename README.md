@@ -1,0 +1,2 @@
+# TradingBot-Algorithm
+TradingBot-Algorithm
