@@ -1,4 +1,4 @@
-# Gold Trading Bot with MetaTrader5 API
+# Gold vs USD Trading Bot with MetaTrader5 API
 
 
 ## Introduction
