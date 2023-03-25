@@ -7,6 +7,7 @@ This Python script is a simple trading bot that uses the MetaTrader5 API to trad
 ## Technologies
 #### 1. Jupyter Notebook
 #### 2. Python 
+#### 3. MetaTrader
 
 
 ## Key Features
