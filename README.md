@@ -1,7 +1,6 @@
 # Gold Trading Bot with MetaTrader5 API
 
 
-
 ## Introduction
 This Python script is a simple trading bot that uses the MetaTrader5 API to trade Gold (XAU/USD) on a demo account.
 
@@ -147,7 +146,6 @@ def buy_sell_signals(src, xATRTrailingStop, ema):
     return res
 ```
 
-
 ## Defining our series, stationarity and displaying our results.
 
 ### This function getData() retrieves the historical OHLC (Open, High, Low, Close) data for a given symbol and timeframe using the MetaTrader API. It returns a Pandas DataFrame object containing the retrieved data.
@@ -178,7 +176,6 @@ def generateSignal(data):
 RiskRewardRatio = 8
 percentage = 0.00031
 ```
-
 
 ## Creating our monte carlo time series simulations using daily returns from out stocks.
 
@@ -282,7 +279,6 @@ def trade():
     
 ```
 
-
 ## After removing outliers, lets take a look at the profile of the data distribution.
 
 ### The first function, trade(), retrieves market data for the XAUUSD symbol using the getData() function and generates a signal using the generateSignal() function. If there is an open position for XAUUSD, it checks if the position's profit is less than -5 or greater than 1. If so, it closes the position by sending a trade request with the opposite direction of the open position using the mt.order_send() function.
@@ -347,7 +343,6 @@ def tradeWithStopLoss():
 
 ```
 
-
 ## Lets see the distribution of the log returns.
 
 ### This code sets up a scheduling system that executes the trade() function every minute at the start of the minute.
@@ -370,25 +365,6 @@ while True:
 ```
 
 ![Chart5](Images/Trading/Trades%20Made.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Conclusion
 
